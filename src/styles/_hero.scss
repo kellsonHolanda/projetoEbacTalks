@@ -1,0 +1,12 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    &__logo{
+        background-color: black;
+    }
+
+    &__text{
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+}
