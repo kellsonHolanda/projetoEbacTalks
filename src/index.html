@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -19,16 +20,123 @@
 
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="logo da Ebac">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 12s
+                O maior evento de tecnologia do Brasil começa em: <span id="contador"></span> 
             </p>
-
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Rua EBAC - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$100,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        10/01/2023 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Garanta sua vaga</a>
+            </div>
         </div>
     </header>
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At recusandae odio quisquam, nihil et magnam sequi tempore deleniti aliquid sed iste quaerat vel, enim esse ipsa, consectetur inventore. Numquam, nobis.</p>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam, obcaecati ipsa quo magnam quos consequuntur? Doloremque, ut quasi hic enim itaque libero est, voluptates ipsa sapiente fugit esse? Natus!</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="imagem de um homem realizando anotações em frente à tela de um computador">
+        </div>
+    </section>
+
+    <section class="event event--ux-ui event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sed facilis dolor officiis, voluptas consequuntur sapiente illo aliquid esse sequi ratione minus voluptates ipsum molestias nisi tenetur corrupti aperiam accusantium.</p>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sapiente quasi sunt eius pariatur et facilis excepturi molestias nesciunt sed blanditiis quod quis officiis, minus sequi dignissimos, corporis, aut est.</p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="imagem de um celular com destaque dos tópicos de interação com o usuário">
+        </div>
+    </section>
+
+    <section class="event event--data-science">
+        <div class="container"  data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi impedit iure dolorum placeat id, dicta, a eveniet explicabo ratione, totam omnis quia magnam unde quisquam harum illo architecto eius?</p>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ipsam quisquam doloribus dolores eum veniam porro iusto, modi aliquid adipisci rerum doloremque. Non, ipsam et! Officia ipsum sed dolorum soluta!</p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="imagem de uma pessoa em frente à tela de um computador com diversos códigos">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left">
+        <div class="container"  data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Backend</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt neque maxime iste veniam illo, rem officia molestiae ipsam cupiditate rerum blanditiis. Voluptatem enim eaque qui sint! Rem ut laborum dignissimos!</p>
+                <p class="event__details__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque commodi, ea harum voluptatibus, aliquid quos quaerat officiis, velit ducimus eius debitis beatae repellat consequuntur deserunt nobis id earum totam ab!</p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="imagem de uma mulher interagindo com outra pessoa pela tela de um computador">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./images/ebac_logo.svg" alt="Logo da Ebac">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./images/globe.svg" alt="Ícone de globo terrestre">
+                    <select>
+                        <option>English</option>
+                        <option selected>Português</option>
+                    </select>
+                    </div>
+                    
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Sobre a EBAC</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                ® 2023 EBAC, EBAC Company. Todos os direitos reservados. Serviço de educação à ditância. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">
+                Os serviços são disponibilizados mediante pagamento prévio, baseados na adesão a um plano de aulas voltadas à qualificação profissional e sujeito a termos e condições. Serviço comercializado por EBAC Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+        </div>
+        
+
+    </footer>
 
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
+
 </body>
 
 </html>
